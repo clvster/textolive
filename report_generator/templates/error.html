@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>Ошибка генерации отчёта</h1>
+        <p>{{ error }}</p>
+        <pre>{{ log }}</pre>
+        <a href="{% url 'main' %}" class="btn btn-primary">Вернуться на главную</a>
+    </div>
+{% endblock %}

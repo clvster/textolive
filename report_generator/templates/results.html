@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Результат</h2>
+    <p>Ваш отчёт успешно сгенерирован!</p>
+    <div class="form-group">
+        <label for="tex_content">TeX-код</label>
+        <textarea class="form-control" id="tex_content" rows="10" readonly>{{ tex_content }}</textarea>
+        <button class="btn btn-primary mt-2" onclick="copyTex()">Скопировать TeX</button>
+    </div>
+    <a href="{{ pdf_url }}" class="btn btn-primary mt-2" download>Скачать PDF</a>
+
+    <script>
+        function copyTex() {
+            const textarea = document.getElementById('tex_content');
+            textarea.select();
+            document.execCommand('copy');
+            alert('TeX-код скопирован!');
+        }
+    </script>
+{% endblock %}

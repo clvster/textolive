@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Работа</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="objective">Цель работы</label>
+            <textarea class="form-control" id="objective" name="objective" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="task">Задание</label>
+            <textarea class="form-control" id="task" name="task" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="progress">Ход работы</label>
+            <textarea class="form-control" id="progress" name="progress" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Далее</button>
+    </form>
+{% endblock %}

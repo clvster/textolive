@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Выводы и приложение</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="conclusions">Выводы</label>
+            <textarea class="form-control" id="conclusions" name="conclusions" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="appendix_link">Ссылка на репозиторий</label>
+            <input type="text" class="form-control" id="appendix_link" name="appendix_link" placeholder="Введите ссылку на репозиторий">
+        </div>
+        <button type="submit" class="btn btn-primary">Сгенерировать отчёт</button>
+    </form>
+{% endblock %}
