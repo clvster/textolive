@@ -1,0 +1,111 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{geometry}
+    \geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+% Устанавливая стиль страницы без нумерации на титульной странице
+\pagestyle{empty}
+
+% Создавая титульный лист
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{center}
+    \textbf{МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ}
+
+    \vspace{0.1cm}
+
+    Федеральное государственное автономное образовательное учреждение высшего образования
+
+    \vspace{0.1cm}
+
+    \textbf{НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ \\ТОМСКИЙ ПОЛИТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ}
+
+    \vspace{1.0cm}
+
+    Инженерная школа информационных технологий и робототехники
+
+    Отделение информационных технологий
+
+    Направление информатика и вычислительная техника
+
+    \vspace{2cm}
+
+    \textbf{Отчет} \\
+    по лабораторной работе №1 \\
+    \vspace{0.5cm}
+    по дисциплине \\
+    «\MakeUppercase{Прога}» \\
+    \vspace{0.5cm}
+    \textbf{Отчёты}
+\end{center}
+
+\vspace{1.5cm}
+
+\begin{flushleft}
+    Выполнил: \\
+    Студент группы Тест
+\end{flushleft}
+\begin{center}
+    \underline{\hspace{5cm}}
+\end{center}
+\begin{flushright}
+    Тест
+\end{flushright}
+
+\vspace{0.5cm}
+
+\begin{flushleft}
+    Проверил: \\
+    Ассистент ОИТ ИШИТР
+\end{flushleft}
+\begin{center}
+    \underline{\hspace{5cm}}
+\end{center}
+\begin{flushright}
+    А.Ю. Малкин
+\end{flushright}
+
+\vspace{4.4cm}
+
+\begin{center}
+    Томск 2025
+\end{center}
+
+% Включая нумерацию страниц начиная со второй страницы
+\newpage
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+
+% Описывая содержание разделов
+\section*{Цель работы}
+Тест1
+
+\section*{Задание}
+Тест2
+
+\section*{Ход работы}
+Тест3
+
+\newpage
+
+\section*{Выводы}
+Тест1
+
+\newpage
+
+\begin{flushright}
+\textbf{Приложение 1 - Код программы}
+\end{flushright}
+По ссылке, ведущий на репозиторий в codelab.tpu.ru, представлены файлы исходного кода проекта к данной лабораторной работе: \href{repo}{repo}
+
+\end{document}
